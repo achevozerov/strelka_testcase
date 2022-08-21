@@ -7,7 +7,9 @@ import scrapy
 
 
 class HotelItem(scrapy.Item):
-    # define the fields for your item here like:
+    """
+        Класс содержащий поля собираемые с одного объекта
+    """
     id = scrapy.Field()
     hotel = scrapy.Field()
     type = scrapy.Field()

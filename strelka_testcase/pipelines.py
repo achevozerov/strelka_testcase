@@ -10,7 +10,9 @@ from itemadapter import ItemAdapter
 import psycopg2
 
 class StrelkaTestcasePipeline:
-
+    """
+        Пайплайн для загрузки данных в кластер
+    """
     def open_spider(self, spider):
         hostname = 'db02.cluster.strlk.ru'
         username = 'testuser01'
